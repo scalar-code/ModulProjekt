@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perparim Çalaj — Modul Projekt</title>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modul Projekt — Perparim Çalaj, Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -11,474 +10,273 @@
 </head>
 <body>
 
-  <!-- Loader -->
-  <div class="loader" id="loader">
-    <div class="loader-line"></div>
-    <div class="loader-text">MODUL PROJEKT</div>
+<div class="loader" id="loader">
+  <div class="loader-bar"></div>
+  <div class="loader-label">Modul Projekt</div>
+</div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav class="nav dark" id="nav">
+  <a href="index.html" class="nav-logo"><span class="logo-m">M</span>odul Projekt</a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="contact.html" class="nav-link">Contact</a>
   </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="projects.html" class="mobile-link">Projects</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+</div>
 
-  <!-- Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursor-follower"></div>
-
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <a href="#hero" class="nav-logo">
-      <span class="logo-mark">M</span>
-      <span class="logo-full">odul Projekt</span>
-    </a>
-    <div class="nav-links">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#philosophy" class="nav-link">Philosophy</a>
-      <a href="#contact" class="nav-link">Contact</a>
+<!-- HERO -->
+<section class="home-hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-diagonal"></div>
+  <div class="container home-hero-inner">
+    <div class="hero-left">
+      <span class="hero-eyebrow rv">Architecture &amp; Design Studio · Prishtina</span>
+      <h1 class="hero-name rv d1">Perparim<em>Çalaj</em></h1>
+      <div class="hero-company rv d2">Modul Projekt</div>
+      <div class="hero-actions rv d3">
+        <a href="projects.html" class="btn btn-primary"><span>View Projects</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="contact.html" class="btn btn-outline"><span>Get in Touch</span></a>
+      </div>
     </div>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
-    <a href="#about" class="mobile-link">About</a>
-    <a href="#projects" class="mobile-link">Projects</a>
-    <a href="#philosophy" class="mobile-link">Philosophy</a>
-    <a href="#contact" class="mobile-link">Contact</a>
+    <div class="hero-right rv d2">
+      <p class="hero-tagline">Crafting spaces where structure meets silence, and every detail carries intention.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="hero-meta-label">Founded</span><span class="hero-meta-value">2009</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Projects</span><span class="hero-meta-value">80+</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Location</span><span class="hero-meta-value">Kosovo</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Awards</span><span class="hero-meta-value">12</span></div>
+      </div>
+    </div>
   </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Architecture</span><span class="marquee-dot">·</span>
+    <span>Interior Design</span><span class="marquee-dot">·</span>
+    <span>Urban Planning</span><span class="marquee-dot">·</span>
+    <span>Consulting</span><span class="marquee-dot">·</span>
+    <span>Modul Projekt</span><span class="marquee-dot">·</span>
+    <span>Architecture</span><span class="marquee-dot">·</span>
+    <span>Interior Design</span><span class="marquee-dot">·</span>
+    <span>Urban Planning</span><span class="marquee-dot">·</span>
+    <span>Consulting</span><span class="marquee-dot">·</span>
+    <span>Modul Projekt</span><span class="marquee-dot">·</span>
+  </div>
+</div>
+
+<!-- FEATURED PROJECTS -->
+<section class="featured">
+  <div class="container">
+    <div class="section-label">
+      <span class="section-tag on-dark rv from-left">Featured Work</span>
+      <div class="section-rule on-dark"></div>
     </div>
-    <div class="hero-content">
-      <div class="hero-eyebrow reveal-up">Architect &amp; Design Studio</div>
-      <h1 class="hero-name reveal-up delay-1">
-        <span class="name-line">Perparim</span>
-        <span class="name-line italic">Çalaj</span>
-      </h1>
-      <div class="hero-company reveal-up delay-2">Modul Projekt</div>
-      <p class="hero-tagline reveal-up delay-3">
-        Crafting spaces where structure meets silence,<br />
-        and every detail carries intention.
-      </p>
-      <a href="#projects" class="hero-cta reveal-up delay-4">
-        <span>View Work</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    <h2 class="section-title on-dark rv">Selected <em>Projects</em></h2>
+  </div>
+  <div class="container" style="margin-top:0">
+    <div class="featured-grid" style="margin-top:48px">
+
+      <a href="projects.html" class="feat-card rv">
+        <div class="feat-visual">
+          <div class="feat-svg pc1">
+            <svg viewBox="0 0 360 480" fill="none"><rect x="40" y="360" width="280" height="6" fill="white" opacity=".15"/><rect x="80" y="120" width="200" height="240" stroke="white" stroke-width="1" fill="none" opacity=".35"/><path d="M80 120 L180 40 L280 120" stroke="white" stroke-width="1" fill="none" opacity=".35"/><rect x="140" y="250" width="80" height="110" stroke="white" stroke-width=".8" fill="none" opacity=".45"/><line x1="180" y1="40" x2="180" y2="28" stroke="white" stroke-width=".6" opacity=".3"/><rect x="50" y="200" width="28" height="160" stroke="white" stroke-width=".7" fill="none" opacity=".25"/><rect x="282" y="200" width="28" height="160" stroke="white" stroke-width=".7" fill="none" opacity=".25"/></svg>
+          </div>
+          <div class="feat-overlay"></div>
+          <div class="feat-hover-label">View Project →</div>
+        </div>
+        <div class="feat-info">
+          <span class="feat-num">01</span>
+          <div class="feat-title">Villa Dardania</div>
+          <div class="feat-sub">Residential · Prishtina · 2024</div>
+        </div>
       </a>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-    <div class="hero-number">01</div>
-  </section>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag reveal-left">About</span>
-        <div class="section-line reveal-line"></div>
-      </div>
-      <div class="about-grid">
-        <div class="about-visual reveal-left">
-          <div class="about-img-wrap">
-            <div class="about-img-placeholder">
-              <div class="arch-icon">
-                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="20" y="160" width="160" height="4" fill="currentColor" opacity="0.3"/>
-                  <rect x="60" y="80" width="80" height="80" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                  <path d="M60 80 L100 40 L140 80" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                  <rect x="85" y="120" width="30" height="40" stroke="currentColor" stroke-width="1" fill="none"/>
-                  <line x1="100" y1="40" x2="100" y2="30" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-                  <rect x="30" y="110" width="20" height="50" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
-                  <rect x="150" y="110" width="20" height="50" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
-                </svg>
-              </div>
-            </div>
-            <div class="about-img-border"></div>
+      <a href="projects.html" class="feat-card rv d1">
+        <div class="feat-visual">
+          <div class="feat-svg pc2">
+            <svg viewBox="0 0 360 280" fill="none"><rect x="30" y="220" width="300" height="4" fill="white" opacity=".15"/><rect x="60" y="60" width="240" height="160" stroke="white" stroke-width="1" fill="none" opacity=".3"/><rect x="60" y="60" width="80" height="160" stroke="white" stroke-width=".5" fill="none" opacity=".2"/><rect x="140" y="60" width="80" height="160" stroke="white" stroke-width=".5" fill="none" opacity=".2"/><rect x="80" y="80" width="40" height="70" stroke="white" stroke-width=".7" fill="none" opacity=".4"/><rect x="160" y="80" width="40" height="70" stroke="white" stroke-width=".7" fill="none" opacity=".4"/><rect x="240" y="80" width="40" height="70" stroke="white" stroke-width=".7" fill="none" opacity=".4"/></svg>
           </div>
-          <div class="about-stats">
-            <div class="stat reveal-up">
-              <span class="stat-num" data-count="15">0</span>
-              <span class="stat-label">Years of Practice</span>
-            </div>
-            <div class="stat reveal-up delay-1">
-              <span class="stat-num" data-count="80">0</span>
-              <span class="stat-label">Projects Completed</span>
-            </div>
-            <div class="stat reveal-up delay-2">
-              <span class="stat-num" data-count="12">0</span>
-              <span class="stat-label">Design Awards</span>
-            </div>
-          </div>
+          <div class="feat-overlay"></div>
+          <div class="feat-hover-label">View Project →</div>
         </div>
-        <div class="about-text">
-          <h2 class="section-title reveal-up">Architecture as<br /><em>Living Art</em></h2>
-          <p class="about-desc reveal-up delay-1">
-            Perparim Çalaj is the founder and lead architect of Modul Projekt,
-            a design studio rooted in the belief that architecture should feel inevitable —
-            as though no other form was possible.
-          </p>
-          <p class="about-desc reveal-up delay-2">
-            With a practice spanning residential, cultural, and commercial work,
-            Perparim brings a meticulous sensibility to every commission. Each project
-            begins with deep listening — to the site, the client, and the silent
-            requirements of light, material, and time.
-          </p>
-          <div class="about-credentials reveal-up delay-3">
-            <div class="credential">
-              <span class="credential-icon">◈</span>
-              <span>Master of Architecture — University of Prishtina</span>
-            </div>
-            <div class="credential">
-              <span class="credential-icon">◈</span>
-              <span>Licensed Architect — Kosovo Chamber of Architects</span>
-            </div>
-            <div class="credential">
-              <span class="credential-icon">◈</span>
-              <span>Founder, Modul Projekt Studio</span>
-            </div>
-          </div>
+        <div class="feat-info">
+          <span class="feat-num">02</span>
+          <div class="feat-title">Cultural Centre Fushë</div>
+          <div class="feat-sub">Cultural · Fushë Kosova · 2023</div>
         </div>
-      </div>
-    </div>
-  </section>
+      </a>
 
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag reveal-left">Selected Work</span>
-        <div class="section-line reveal-line"></div>
-      </div>
-      <h2 class="section-title reveal-up">Recent <em>Projects</em></h2>
-    </div>
-    <div class="projects-grid">
-
-      <article class="project-card reveal-up" data-index="01">
-        <div class="project-visual">
-          <div class="project-placeholder p1">
-            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="50" y="180" width="300" height="5" fill="white" opacity="0.2"/>
-              <rect x="100" y="80" width="200" height="100" stroke="white" stroke-width="1" fill="none" opacity="0.4"/>
-              <rect x="130" y="50" width="140" height="30" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
-              <rect x="150" y="130" width="40" height="50" stroke="white" stroke-width="1" fill="none" opacity="0.5"/>
-              <rect x="210" y="130" width="40" height="50" stroke="white" stroke-width="1" fill="none" opacity="0.5"/>
-              <line x1="200" y1="50" x2="200" y2="20" stroke="white" stroke-width="0.5" opacity="0.3"/>
-              <rect x="80" y="100" width="30" height="80" stroke="white" stroke-width="0.8" fill="none" opacity="0.3"/>
-              <rect x="290" y="100" width="30" height="80" stroke="white" stroke-width="0.8" fill="none" opacity="0.3"/>
-            </svg>
+      <a href="projects.html" class="feat-card rv d2">
+        <div class="feat-visual">
+          <div class="feat-svg pc5">
+            <svg viewBox="0 0 360 280" fill="none"><rect x="30" y="230" width="300" height="4" fill="white" opacity=".15"/><path d="M60 230 Q180 60 300 230" stroke="white" stroke-width="1" fill="none" opacity=".4"/><path d="M90 230 Q180 95 270 230" stroke="white" stroke-width=".6" fill="none" opacity=".25"/><path d="M120 230 Q180 130 240 230" stroke="white" stroke-width=".5" fill="none" opacity=".18"/><line x1="180" y1="60" x2="180" y2="230" stroke="white" stroke-width=".5" stroke-dasharray="4,4" opacity=".2"/></svg>
           </div>
-          <div class="project-overlay">
-            <span class="project-view">View Project</span>
-          </div>
+          <div class="feat-overlay"></div>
+          <div class="feat-hover-label">View Project →</div>
         </div>
-        <div class="project-info">
-          <span class="project-num">01</span>
-          <h3 class="project-title">Villa Dardania</h3>
-          <p class="project-type">Residential · Prishtina, Kosovo · 2024</p>
+        <div class="feat-info">
+          <span class="feat-num">03</span>
+          <div class="feat-title">Amphitheatre Prizren</div>
+          <div class="feat-sub">Cultural · Prizren · 2022</div>
         </div>
-      </article>
-
-      <article class="project-card reveal-up delay-1" data-index="02">
-        <div class="project-visual">
-          <div class="project-placeholder p2">
-            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="40" y="200" width="320" height="4" fill="white" opacity="0.2"/>
-              <rect x="80" y="60" width="240" height="140" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
-              <rect x="80" y="60" width="80" height="140" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
-              <rect x="160" y="60" width="80" height="140" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
-              <rect x="240" y="60" width="80" height="140" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
-              <rect x="100" y="80" width="40" height="60" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
-              <rect x="180" y="80" width="40" height="60" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
-              <rect x="260" y="80" width="40" height="60" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
-            </svg>
-          </div>
-          <div class="project-overlay">
-            <span class="project-view">View Project</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <span class="project-num">02</span>
-          <h3 class="project-title">Cultural Centre Fushë</h3>
-          <p class="project-type">Cultural · Fushë Kosova · 2023</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal-up delay-2" data-index="03">
-        <div class="project-visual">
-          <div class="project-placeholder p3">
-            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="30" y="210" width="340" height="4" fill="white" opacity="0.2"/>
-              <polygon points="200,40 320,210 80,210" stroke="white" stroke-width="1" fill="none" opacity="0.35"/>
-              <line x1="200" y1="40" x2="200" y2="210" stroke="white" stroke-width="0.5" opacity="0.25"/>
-              <line x1="200" y1="100" x2="290" y2="210" stroke="white" stroke-width="0.5" opacity="0.2"/>
-              <line x1="200" y1="100" x2="110" y2="210" stroke="white" stroke-width="0.5" opacity="0.2"/>
-              <rect x="175" y="160" width="50" height="50" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
-            </svg>
-          </div>
-          <div class="project-overlay">
-            <span class="project-view">View Project</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <span class="project-num">03</span>
-          <h3 class="project-title">Pavilion Brezovica</h3>
-          <p class="project-type">Commercial · Brezovica · 2023</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal-up delay-1" data-index="04">
-        <div class="project-visual">
-          <div class="project-placeholder p4">
-            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="60" y="190" width="280" height="5" fill="white" opacity="0.2"/>
-              <rect x="120" y="70" width="160" height="120" stroke="white" stroke-width="1" fill="none" opacity="0.4"/>
-              <rect x="140" y="90" width="50" height="100" stroke="white" stroke-width="0.8" fill="none" opacity="0.35"/>
-              <rect x="210" y="90" width="50" height="100" stroke="white" stroke-width="0.8" fill="none" opacity="0.35"/>
-              <line x1="120" y1="70" x2="100" y2="50" stroke="white" stroke-width="0.5" opacity="0.3"/>
-              <line x1="280" y1="70" x2="300" y2="50" stroke="white" stroke-width="0.5" opacity="0.3"/>
-              <rect x="100" y="40" width="200" height="10" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
-            </svg>
-          </div>
-          <div class="project-overlay">
-            <span class="project-view">View Project</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <span class="project-num">04</span>
-          <h3 class="project-title">Office Tower Peja</h3>
-          <p class="project-type">Commercial · Peja, Kosovo · 2022</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal-up delay-2" data-index="05">
-        <div class="project-visual">
-          <div class="project-placeholder p5">
-            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="40" y="200" width="320" height="4" fill="white" opacity="0.2"/>
-              <path d="M80 200 Q200 60 320 200" stroke="white" stroke-width="1" fill="none" opacity="0.4"/>
-              <path d="M100 200 Q200 90 300 200" stroke="white" stroke-width="0.5" fill="none" opacity="0.25"/>
-              <path d="M120 200 Q200 120 280 200" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
-              <line x1="200" y1="60" x2="200" y2="200" stroke="white" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.3"/>
-            </svg>
-          </div>
-          <div class="project-overlay">
-            <span class="project-view">View Project</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <span class="project-num">05</span>
-          <h3 class="project-title">Amphitheatre Prizren</h3>
-          <p class="project-type">Cultural · Prizren, Kosovo · 2022</p>
-        </div>
-      </article>
-
-      <article class="project-card reveal-up delay-3" data-index="06">
-        <div class="project-visual">
-          <div class="project-placeholder p6">
-            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="50" y="195" width="300" height="5" fill="white" opacity="0.2"/>
-              <rect x="90" y="100" width="220" height="95" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
-              <rect x="90" y="70" width="220" height="30" stroke="white" stroke-width="0.8" fill="none" opacity="0.3"/>
-              <rect x="90" y="50" width="220" height="20" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
-              <line x1="130" y1="100" x2="130" y2="195" stroke="white" stroke-width="0.5" opacity="0.2"/>
-              <line x1="200" y1="100" x2="200" y2="195" stroke="white" stroke-width="0.5" opacity="0.2"/>
-              <line x1="270" y1="100" x2="270" y2="195" stroke="white" stroke-width="0.5" opacity="0.2"/>
-              <rect x="170" y="140" width="60" height="55" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
-            </svg>
-          </div>
-          <div class="project-overlay">
-            <span class="project-view">View Project</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <span class="project-num">06</span>
-          <h3 class="project-title">Residential Complex Gjakova</h3>
-          <p class="project-type">Residential · Gjakova, Kosovo · 2021</p>
-        </div>
-      </article>
+      </a>
 
     </div>
-  </section>
-
-  <!-- Philosophy -->
-  <section class="philosophy" id="philosophy">
-    <div class="philosophy-bg">
-      <div class="philosophy-grid"></div>
+    <div style="text-align:right;margin-top:32px">
+      <a href="projects.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.6)"><span>All Projects</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag reveal-left light">Philosophy</span>
-        <div class="section-line reveal-line light"></div>
-      </div>
-      <div class="philosophy-content">
-        <blockquote class="philosophy-quote reveal-up">
-          "Architecture is the learned game, correct and magnificent,
-          of forms assembled in the light."
-          <cite>— Le Corbusier</cite>
-        </blockquote>
-        <div class="philosophy-pillars">
-          <div class="pillar reveal-up">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="1"/><path d="M30 10 L30 50 M10 30 L50 30" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
-            </div>
-            <h3 class="pillar-title">Context</h3>
-            <p class="pillar-desc">Every building is a response to its place — geography, culture, and the human stories that surround it.</p>
-          </div>
-          <div class="pillar reveal-up delay-1">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 60 60" fill="none"><rect x="10" y="10" width="40" height="40" stroke="currentColor" stroke-width="1"/><rect x="20" y="20" width="20" height="20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><rect x="25" y="25" width="10" height="10" fill="currentColor" opacity="0.3"/></svg>
-            </div>
-            <h3 class="pillar-title">Precision</h3>
-            <p class="pillar-desc">Details are not decoration — they are the language through which a building speaks its truth.</p>
-          </div>
-          <div class="pillar reveal-up delay-2">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 60 60" fill="none"><path d="M10 50 L30 10 L50 50 Z" stroke="currentColor" stroke-width="1" fill="none"/><line x1="30" y1="10" x2="30" y2="50" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
-            </div>
-            <h3 class="pillar-title">Endurance</h3>
-            <p class="pillar-desc">We design for decades, not trends — buildings that age with dignity and deepen with time.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Services -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag reveal-left">Services</span>
-        <div class="section-line reveal-line"></div>
+<!-- ABOUT SNAPSHOT -->
+<section class="home-about">
+  <div class="container home-about-grid">
+    <div class="about-snap-img rv from-left">
+      <div class="snap-frame">
+        <svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="70" r="40" stroke="currentColor" stroke-width="1"/><path d="M60 70 Q60 130 100 150 Q140 130 140 70" stroke="currentColor" stroke-width="1" fill="none"/><line x1="100" y1="150" x2="100" y2="190" stroke="currentColor" stroke-width="1"/><line x1="70" y1="175" x2="130" y2="175" stroke="currentColor" stroke-width="1"/></svg>
       </div>
-      <h2 class="section-title reveal-up">What We <em>Offer</em></h2>
-      <div class="services-list">
-        <div class="service-item reveal-up">
-          <span class="service-num">01</span>
-          <div class="service-body">
-            <h3 class="service-title">Architectural Design</h3>
-            <p class="service-desc">Full-scope architectural services from concept through construction, covering residential, commercial, and cultural typologies.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item reveal-up delay-1">
-          <span class="service-num">02</span>
-          <div class="service-body">
-            <h3 class="service-title">Interior Architecture</h3>
-            <p class="service-desc">Spatial planning and interior environments that extend the architectural language inward, creating coherent and considered spaces.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item reveal-up delay-2">
-          <span class="service-num">03</span>
-          <div class="service-body">
-            <h3 class="service-title">Urban Planning</h3>
-            <p class="service-desc">Masterplanning and urban design for mixed-use developments, public spaces, and neighbourhood revitalisation.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item reveal-up delay-3">
-          <span class="service-num">04</span>
-          <div class="service-body">
-            <h3 class="service-title">Consulting &amp; Feasibility</h3>
-            <p class="service-desc">Site assessments, feasibility studies, and expert consultation to help clients understand the full potential of their projects.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
+      <div class="snap-accent"></div>
+      <div class="snap-tag">Architect</div>
+    </div>
+    <div class="about-snap-text">
+      <div class="section-label"><span class="section-tag rv from-left">About</span><div class="section-rule"></div></div>
+      <h2 class="section-title rv">Meet <em>Perparim</em></h2>
+      <p class="snap-intro rv d1">
+        Perparim Çalaj is the founder and lead architect of Modul Projekt —
+        a studio where precision, context, and enduring beauty converge.
+      </p>
+      <p class="snap-body rv d2">
+        With over 15 years of practice across Kosovo and the wider Balkans,
+        Perparim brings a meticulous sensibility to every commission.
+        His work spans villas, cultural centres, public pavilions, and
+        mixed-use developments, each shaped by a deep commitment to material
+        honesty and spatial quality.
+      </p>
+      <div class="snap-stats rv d3">
+        <div class="snap-stat"><span class="snap-stat-n" data-count="15">0</span><span class="snap-stat-l">Years</span></div>
+        <div class="snap-stat"><span class="snap-stat-n" data-count="80">0</span><span class="snap-stat-l">Projects</span></div>
+        <div class="snap-stat"><span class="snap-stat-n" data-count="12">0</span><span class="snap-stat-l">Awards</span></div>
+      </div>
+      <div class="rv d4"><a href="about.html" class="btn btn-dark" style="margin-top:16px"><span>Full Profile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="home-services">
+  <div class="container">
+    <div class="section-label"><span class="section-tag rv from-left">Services</span><div class="section-rule"></div></div>
+    <h2 class="section-title rv">What We <em>Offer</em></h2>
+    <div class="home-services-grid" style="margin-top:56px">
+      <div class="svc-card rv">
+        <span class="svc-card-num">01</span>
+        <h3 class="svc-card-title">Architectural Design</h3>
+        <p class="svc-card-desc">Full-scope architectural services from concept through construction — residential, commercial, and cultural.</p>
+        <a href="services.html" class="svc-card-link">Learn more →</a>
+      </div>
+      <div class="svc-card rv d1">
+        <span class="svc-card-num">02</span>
+        <h3 class="svc-card-title">Interior Architecture</h3>
+        <p class="svc-card-desc">Spatial planning and interior environments that extend the architectural language inward.</p>
+        <a href="services.html" class="svc-card-link">Learn more →</a>
+      </div>
+      <div class="svc-card rv d2">
+        <span class="svc-card-num">03</span>
+        <h3 class="svc-card-title">Urban Planning</h3>
+        <p class="svc-card-desc">Masterplanning and urban design for mixed-use developments and public spaces.</p>
+        <a href="services.html" class="svc-card-link">Learn more →</a>
+      </div>
+      <div class="svc-card rv d3">
+        <span class="svc-card-num">04</span>
+        <h3 class="svc-card-title">Consulting &amp; Feasibility</h3>
+        <p class="svc-card-desc">Site assessments and expert consultation to help clients understand the full potential of their projects.</p>
+        <a href="services.html" class="svc-card-link">Learn more →</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag reveal-left">Contact</span>
-        <div class="section-line reveal-line"></div>
+<!-- PHILOSOPHY STRIP -->
+<section class="philosophy-strip">
+  <div class="philosophy-strip-grid"></div>
+  <div class="container" style="position:relative">
+    <blockquote class="strip-quote rv">
+      Architecture is the learned game, correct and magnificent, of forms assembled in the light.
+    </blockquote>
+    <div class="strip-cite rv d1">— Le Corbusier</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="container">
+    <div class="cta-strip-inner rv">
+      <div class="cta-text">
+        <h2>Ready to start a <em>project</em>?</h2>
+        <p>Every great space begins with a conversation. Let's talk about yours.</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-left">
-          <h2 class="section-title reveal-up">Start a <em>Conversation</em></h2>
-          <p class="contact-intro reveal-up delay-1">
-            Whether you have a project in mind or simply wish to discuss ideas,
-            Perparim welcomes every conversation. Great architecture begins with dialogue.
-          </p>
-          <div class="contact-details reveal-up delay-2">
-            <div class="contact-item">
-              <span class="contact-label">Studio</span>
-              <span class="contact-value">Rruga Nënë Tereza, Prishtina, Kosovo</span>
-            </div>
-            <div class="contact-item">
-              <span class="contact-label">Email</span>
-              <a href="mailto:info@modulprojekt.com" class="contact-value contact-link">info@modulprojekt.com</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-label">Phone</span>
-              <a href="tel:+38344000000" class="contact-value contact-link">+383 44 000 000</a>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form reveal-up delay-2" id="contact-form">
-          <div class="form-group">
-            <input type="text" id="name" name="name" class="form-input" placeholder=" " required />
-            <label for="name" class="form-label">Your Name</label>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" class="form-input" placeholder=" " required />
-            <label for="email" class="form-label">Email Address</label>
-          </div>
-          <div class="form-group">
-            <input type="text" id="project" name="project" class="form-input" placeholder=" " />
-            <label for="project" class="form-label">Project Type</label>
-          </div>
-          <div class="form-group">
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " rows="4" required></textarea>
-            <label for="message" class="form-label">Message</label>
-          </div>
-          <button type="submit" class="form-submit">
-            <span>Send Message</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </button>
-        </form>
+      <a href="contact.html" class="btn btn-dark"><span>Contact Us</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-m">M</span>odul Projekt</div>
+        <p class="footer-tagline">Architecture with intention. Spaces that endure. Design that matters.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Architectural Design</a>
+        <a href="services.html">Interior Architecture</a>
+        <a href="services.html">Urban Planning</a>
+        <a href="services.html">Consulting</a>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <p>Rruga Nënë Tereza<br />Prishtina, Kosovo</p>
+        <p style="margin-top:12px"><a href="mailto:info@modulprojekt.com" style="color:rgba(255,255,255,0.38);transition:color .3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">info@modulprojekt.com</a></p>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="logo-mark">M</span><span>odul Projekt</span>
-          </div>
-          <p class="footer-tagline">Architecture with intention.</p>
-        </div>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#philosophy">Philosophy</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-social">
-          <a href="#" class="social-link" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2024 Modul Projekt. Perparim Çalaj.</span>
-        <span>All rights reserved.</span>
+    <div class="footer-bottom">
+      <span>© 2024 Modul Projekt. Perparim Çalaj.</span>
+      <div class="footer-social">
+        <a href="#" class="fsoc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+        <a href="#" class="fsoc" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Modul Projekt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo"><span class="logo-m">M</span>odul Projekt</a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="projects.html" class="mobile-link">Projects</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-grid"></div>
+  <div class="container" style="position:relative">
+    <span class="page-hero-tag rv">Portfolio</span>
+    <h1 class="page-hero-title rv d1">Selected<br /><em>Projects</em></h1>
+    <p class="page-hero-sub rv d2">80+ completed commissions across Kosovo and the wider Balkans, spanning residential, cultural, and commercial typologies.</p>
+  </div>
+  <div class="page-hero-num">03</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-page">
+  <div class="container">
+    <div class="filter-bar rv">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="cultural">Cultural</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="proj-card rv" data-category="residential">
+        <div class="proj-visual pc1">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="40" y="220" width="280" height="5" fill="white" opacity=".15"/><rect x="80" y="80" width="200" height="140" stroke="white" stroke-width="1" fill="none" opacity=".35"/><path d="M80 80L180 30L280 80" stroke="white" stroke-width="1" fill="none" opacity=".35"/><rect x="140" y="160" width="80" height="60" stroke="white" stroke-width=".8" fill="none" opacity=".45"/><rect x="50" y="140" width="28" height="80" stroke="white" stroke-width=".7" fill="none" opacity=".25"/><rect x="282" y="140" width="28" height="80" stroke="white" stroke-width=".7" fill="none" opacity=".25"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Residential</div><div class="proj-title">Villa Dardania</div><div class="proj-meta">Prishtina, Kosovo · 2024</div></div>
+      </div>
+
+      <div class="proj-card rv d1" data-category="cultural">
+        <div class="proj-visual pc2">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="30" y="220" width="300" height="4" fill="white" opacity=".15"/><rect x="60" y="60" width="240" height="160" stroke="white" stroke-width="1" fill="none" opacity=".3"/><rect x="60" y="60" width="80" height="160" stroke="white" stroke-width=".5" fill="none" opacity=".2"/><rect x="140" y="60" width="80" height="160" stroke="white" stroke-width=".5" fill="none" opacity=".2"/><rect x="80" y="80" width="40" height="70" stroke="white" stroke-width=".7" fill="none" opacity=".4"/><rect x="160" y="80" width="40" height="70" stroke="white" stroke-width=".7" fill="none" opacity=".4"/><rect x="240" y="80" width="40" height="70" stroke="white" stroke-width=".7" fill="none" opacity=".4"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Cultural</div><div class="proj-title">Cultural Centre Fushë</div><div class="proj-meta">Fushë Kosova · 2023</div></div>
+      </div>
+
+      <div class="proj-card rv d2" data-category="commercial">
+        <div class="proj-visual pc3">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="40" y="230" width="280" height="4" fill="white" opacity=".15"/><path d="M60 230L60 60L300 60L300 230" stroke="white" stroke-width="1" fill="none" opacity=".3"/><line x1="100" y1="60" x2="100" y2="230" stroke="white" stroke-width=".5" opacity=".18"/><line x1="140" y1="60" x2="140" y2="230" stroke="white" stroke-width=".5" opacity=".18"/><line x1="180" y1="60" x2="180" y2="230" stroke="white" stroke-width=".5" opacity=".18"/><line x1="220" y1="60" x2="220" y2="230" stroke="white" stroke-width=".5" opacity=".18"/><line x1="260" y1="60" x2="260" y2="230" stroke="white" stroke-width=".5" opacity=".18"/><rect x="150" y="155" width="60" height="75" stroke="white" stroke-width=".8" fill="none" opacity=".4"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Commercial</div><div class="proj-title">Office Tower Peja</div><div class="proj-meta">Peja, Kosovo · 2022</div></div>
+      </div>
+
+      <div class="proj-card rv" data-category="cultural">
+        <div class="proj-visual pc4">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="30" y="240" width="300" height="4" fill="white" opacity=".15"/><path d="M60 240Q180 60 300 240" stroke="white" stroke-width="1" fill="none" opacity=".4"/><path d="M90 240Q180 90 270 240" stroke="white" stroke-width=".6" fill="none" opacity=".25"/><path d="M120 240Q180 130 240 240" stroke="white" stroke-width=".5" fill="none" opacity=".18"/><line x1="180" y1="60" x2="180" y2="240" stroke="white" stroke-width=".5" stroke-dasharray="4,4" opacity=".2"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Cultural</div><div class="proj-title">Amphitheatre Prizren</div><div class="proj-meta">Prizren, Kosovo · 2022</div></div>
+      </div>
+
+      <div class="proj-card rv d1" data-category="commercial">
+        <div class="proj-visual pc5">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="30" y="225" width="300" height="5" fill="white" opacity=".15"/><polygon points="180,50 310,225 50,225" stroke="white" stroke-width="1" fill="none" opacity=".35"/><line x1="180" y1="50" x2="180" y2="225" stroke="white" stroke-width=".5" opacity=".25"/><line x1="180" y1="100" x2="275" y2="225" stroke="white" stroke-width=".4" opacity=".18"/><line x1="180" y1="100" x2="85" y2="225" stroke="white" stroke-width=".4" opacity=".18"/><rect x="155" y="170" width="50" height="55" stroke="white" stroke-width=".8" fill="none" opacity=".4"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Commercial</div><div class="proj-title">Pavilion Brezovica</div><div class="proj-meta">Brezovica · 2021</div></div>
+      </div>
+
+      <div class="proj-card rv d2" data-category="residential">
+        <div class="proj-visual pc6">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="40" y="220" width="280" height="5" fill="white" opacity=".15"/><rect x="90" y="80" width="180" height="140" stroke="white" stroke-width="1" fill="none" opacity=".3"/><rect x="90" y="60" width="180" height="20" stroke="white" stroke-width=".8" fill="none" opacity=".25"/><line x1="130" y1="80" x2="130" y2="220" stroke="white" stroke-width=".5" opacity=".18"/><line x1="180" y1="80" x2="180" y2="220" stroke="white" stroke-width=".5" opacity=".18"/><line x1="230" y1="80" x2="230" y2="220" stroke="white" stroke-width=".5" opacity=".18"/><rect x="155" y="140" width="50" height="80" stroke="white" stroke-width=".8" fill="none" opacity=".4"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Residential</div><div class="proj-title">Residential Complex Gjakova</div><div class="proj-meta">Gjakova, Kosovo · 2021</div></div>
+      </div>
+
+      <div class="proj-card rv" data-category="residential">
+        <div class="proj-visual pc7">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="40" y="225" width="280" height="5" fill="white" opacity=".15"/><rect x="70" y="90" width="220" height="135" stroke="white" stroke-width="1" fill="none" opacity=".3"/><path d="M70 90L180 45L290 90" stroke="white" stroke-width="1" fill="none" opacity=".35"/><rect x="145" y="155" width="70" height="70" stroke="white" stroke-width=".8" fill="none" opacity=".45"/><rect x="85" y="110" width="50" height="50" stroke="white" stroke-width=".6" fill="none" opacity=".3"/><rect x="225" y="110" width="50" height="50" stroke="white" stroke-width=".6" fill="none" opacity=".3"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Residential</div><div class="proj-title">House Ferizaj</div><div class="proj-meta">Ferizaj, Kosovo · 2020</div></div>
+      </div>
+
+      <div class="proj-card rv d1" data-category="cultural">
+        <div class="proj-visual pc8">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="30" y="220" width="300" height="5" fill="white" opacity=".15"/><rect x="60" y="70" width="240" height="150" stroke="white" stroke-width="1" fill="none" opacity=".3"/><rect x="90" y="95" width="60" height="125" stroke="white" stroke-width=".7" fill="none" opacity=".35"/><rect x="150" y="95" width="60" height="125" stroke="white" stroke-width=".7" fill="none" opacity=".35"/><rect x="210" y="95" width="60" height="125" stroke="white" stroke-width=".7" fill="none" opacity=".35"/><rect x="60" y="55" width="240" height="15" stroke="white" stroke-width=".5" fill="none" opacity=".2"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Cultural</div><div class="proj-title">Library Mitrovica</div><div class="proj-meta">Mitrovica, Kosovo · 2020</div></div>
+      </div>
+
+      <div class="proj-card rv d2" data-category="commercial">
+        <div class="proj-visual pc9">
+          <svg viewBox="0 0 360 280" fill="none"><rect x="40" y="225" width="280" height="5" fill="white" opacity=".15"/><rect x="110" y="50" width="140" height="175" stroke="white" stroke-width="1" fill="none" opacity=".35"/><rect x="110" y="50" width="140" height="30" stroke="white" stroke-width=".6" fill="none" opacity=".2"/><line x1="145" y1="80" x2="145" y2="225" stroke="white" stroke-width=".5" opacity=".18"/><line x1="180" y1="80" x2="180" y2="225" stroke="white" stroke-width=".5" opacity=".18"/><line x1="215" y1="80" x2="215" y2="225" stroke="white" stroke-width=".5" opacity=".18"/><rect x="152" y="155" width="56" height="70" stroke="white" stroke-width=".8" fill="none" opacity=".4"/></svg>
+          <div class="proj-overlay"><span>View Project</span></div>
+        </div>
+        <div class="proj-info"><div class="proj-cat">Commercial</div><div class="proj-title">Hotel &amp; Spa Peja</div><div class="proj-meta">Peja, Kosovo · 2019</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="container">
+    <div class="cta-strip-inner rv">
+      <div class="cta-text">
+        <h2>Have a <em>project</em> in mind?</h2>
+        <p>We'd love to hear about it. Get in touch to start the conversation.</p>
+      </div>
+      <a href="contact.html" class="btn btn-dark"><span>Contact Us</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-m">M</span>odul Projekt</div><p class="footer-tagline">Architecture with intention. Spaces that endure. Design that matters.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html">Architectural Design</a><a href="services.html">Interior Architecture</a><a href="services.html">Urban Planning</a><a href="services.html">Consulting</a></div>
+      <div class="footer-col"><h4>Studio</h4><p>Rruga Nënë Tereza<br />Prishtina, Kosovo</p><p style="margin-top:12px"><a href="mailto:info@modulprojekt.com" style="color:rgba(255,255,255,0.38)">info@modulprojekt.com</a></p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Modul Projekt. Perparim Çalaj.</span>
+      <div class="footer-social">
+        <a href="#" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+        <a href="#" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

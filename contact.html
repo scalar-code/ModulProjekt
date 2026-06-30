@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Modul Projekt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo"><span class="logo-m">M</span>odul Projekt</a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="projects.html" class="mobile-link">Projects</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-grid"></div>
+  <div class="container" style="position:relative">
+    <span class="page-hero-tag rv">Contact</span>
+    <h1 class="page-hero-title rv d1">Start a<br /><em>Conversation</em></h1>
+    <p class="page-hero-sub rv d2">Great architecture begins with dialogue. Whether you have a project in mind or simply a question, we welcome every enquiry.</p>
+  </div>
+  <div class="page-hero-num">05</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-page">
+  <div class="container contact-grid">
+
+    <!-- INFO -->
+    <div>
+      <p class="contact-intro-text rv">
+        Perparim and the Modul Projekt team are based in Prishtina and available for projects
+        across Kosovo and beyond. We respond to all enquiries within one business day.
+      </p>
+
+      <div class="contact-info rv d1">
+        <div class="ci-block">
+          <span class="ci-label">Studio Address</span>
+          <span class="ci-value">Rruga Nënë Tereza, Nr. 12<br />10000 Prishtina, Kosovo</span>
+        </div>
+        <div class="ci-block">
+          <span class="ci-label">Email</span>
+          <a href="mailto:info@modulprojekt.com" class="ci-value ci-link">info@modulprojekt.com</a>
+        </div>
+        <div class="ci-block">
+          <span class="ci-label">Phone</span>
+          <a href="tel:+38344000000" class="ci-value ci-link">+383 44 000 000</a>
+        </div>
+        <div class="ci-block">
+          <span class="ci-label">Instagram</span>
+          <a href="#" class="ci-value ci-link">@modulprojekt</a>
+        </div>
+      </div>
+
+      <div class="rv d2">
+        <div class="section-label" style="margin-top:52px;margin-bottom:16px"><span class="section-tag">Studio Hours</span><div class="section-rule"></div></div>
+        <div class="hours-grid">
+          <div class="hours-row"><span class="hours-day">Monday</span><span>09:00 — 18:00</span></div>
+          <div class="hours-row"><span class="hours-day">Tuesday</span><span>09:00 — 18:00</span></div>
+          <div class="hours-row"><span class="hours-day">Wednesday</span><span>09:00 — 18:00</span></div>
+          <div class="hours-row"><span class="hours-day">Thursday</span><span>09:00 — 18:00</span></div>
+          <div class="hours-row"><span class="hours-day">Friday</span><span>09:00 — 17:00</span></div>
+          <div class="hours-row"><span class="hours-day">Saturday</span><span style="color:var(--muted)">By appointment</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div>
+      <div class="section-label rv"><span class="section-tag">Send a Message</span><div class="section-rule"></div></div>
+      <form class="cform rv d1" id="contact-form">
+        <div class="cform-row">
+          <div class="fg">
+            <input type="text" class="fi" id="fname" name="fname" placeholder=" " required />
+            <label class="fl" for="fname">First Name</label>
+          </div>
+          <div class="fg">
+            <input type="text" class="fi" id="lname" name="lname" placeholder=" " required />
+            <label class="fl" for="lname">Last Name</label>
+          </div>
+        </div>
+        <div class="fg">
+          <input type="email" class="fi" id="email" name="email" placeholder=" " required />
+          <label class="fl" for="email">Email Address</label>
+        </div>
+        <div class="fg">
+          <input type="tel" class="fi" id="phone" name="phone" placeholder=" " />
+          <label class="fl" for="phone">Phone Number (optional)</label>
+        </div>
+        <div class="fg">
+          <select class="fi" id="service" name="service" style="appearance:none;cursor:none">
+            <option value="" disabled selected></option>
+            <option value="architectural">Architectural Design</option>
+            <option value="interior">Interior Architecture</option>
+            <option value="urban">Urban Planning</option>
+            <option value="consulting">Consulting &amp; Feasibility</option>
+            <option value="other">Other Enquiry</option>
+          </select>
+          <label class="fl" for="service" style="top:2px;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)">Service of Interest</label>
+        </div>
+        <div class="fg">
+          <textarea class="fi" id="message" name="message" placeholder=" " rows="5" required></textarea>
+          <label class="fl" for="message">Your Message</label>
+        </div>
+        <div class="cform-submit">
+          <button type="submit" class="btn btn-dark"><span>Send Message</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- MAP PLACEHOLDER -->
+  <div class="container" style="margin-top:0">
+    <div class="map-placeholder rv" style="margin-top:80px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      <div class="map-label">Rruga Nënë Tereza, Prishtina</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="footer-logo"><span class="logo-m">M</span>odul Projekt</div><p class="footer-tagline">Architecture with intention. Spaces that endure. Design that matters.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html">Architectural Design</a><a href="services.html">Interior Architecture</a><a href="services.html">Urban Planning</a><a href="services.html">Consulting</a></div>
+      <div class="footer-col"><h4>Studio</h4><p>Rruga Nënë Tereza<br />Prishtina, Kosovo</p><p style="margin-top:12px"><a href="mailto:info@modulprojekt.com" style="color:rgba(255,255,255,0.38)">info@modulprojekt.com</a></p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Modul Projekt. Perparim Çalaj.</span>
+      <div class="footer-social">
+        <a href="#" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+        <a href="#" class="fsoc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

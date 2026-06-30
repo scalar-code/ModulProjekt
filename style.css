@@ -487,3 +487,13 @@ img, svg { display: block; }
 @media (max-width: 480px) {
   .projects-grid { grid-template-columns: 1fr; }
 }
+
+/* ─── Touch / mobile ─────────────────────────────────────────────── */
+@media (hover: none), (pointer: coarse) {
+  /* Kill custom cursor */
+  body { cursor: auto !important; }
+  .cursor, .cursor-ring { display: none !important; }
+  /* Never leave content invisible — reveal all on touch devices */
+  .rv { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .loader { display: none !important; }
+}

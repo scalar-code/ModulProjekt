@@ -10,14 +10,30 @@ document.querySelectorAll('a[href]:not([href^="#"]):not([href^="mailto"]):not([h
 });
 
 /* ─── Loader ─────────────────────────────────────────────────────── */
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    const loader = document.getElementById('loader');
-    if (loader) { loader.classList.add('hidden'); document.body.style.overflow = ''; }
+const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+
+function dismissLoader() {
+  const loader = document.getElementById('loader');
+  if (loader && !loader.classList.contains('hidden')) {
+    loader.classList.add('hidden');
+    document.body.style.overflow = '';
     revealHeroElements();
-  }, 1800);
-});
-if (document.getElementById('loader')) document.body.style.overflow = 'hidden';
+  }
+}
+
+if (document.getElementById('loader')) {
+  if (isTouch) {
+    // On mobile skip the animation entirely — show content immediately
+    document.body.style.overflow = '';
+    window.addEventListener('DOMContentLoaded', () => dismissLoader());
+    window.addEventListener('load', () => dismissLoader());
+  } else {
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('load', () => setTimeout(dismissLoader, 1600));
+  }
+  // Hard fallback: never leave content stuck invisible beyond 2s
+  setTimeout(dismissLoader, 2000);
+}
 
 /* ─── Cursor ─────────────────────────────────────────────────────── */
 const cursor = document.getElementById('cursor');

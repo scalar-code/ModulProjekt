@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perparim Çalaj — Modul Projekt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-line"></div>
+    <div class="loader-text">MODUL PROJEKT</div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-mark">M</span>
+      <span class="logo-full">odul Projekt</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#philosophy" class="nav-link">Philosophy</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#philosophy" class="mobile-link">Philosophy</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">Architect &amp; Design Studio</div>
+      <h1 class="hero-name reveal-up delay-1">
+        <span class="name-line">Perparim</span>
+        <span class="name-line italic">Çalaj</span>
+      </h1>
+      <div class="hero-company reveal-up delay-2">Modul Projekt</div>
+      <p class="hero-tagline reveal-up delay-3">
+        Crafting spaces where structure meets silence,<br />
+        and every detail carries intention.
+      </p>
+      <a href="#projects" class="hero-cta reveal-up delay-4">
+        <span>View Work</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-number">01</div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-left">About</span>
+        <div class="section-line reveal-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">
+              <div class="arch-icon">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="20" y="160" width="160" height="4" fill="currentColor" opacity="0.3"/>
+                  <rect x="60" y="80" width="80" height="80" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                  <path d="M60 80 L100 40 L140 80" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                  <rect x="85" y="120" width="30" height="40" stroke="currentColor" stroke-width="1" fill="none"/>
+                  <line x1="100" y1="40" x2="100" y2="30" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                  <rect x="30" y="110" width="20" height="50" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+                  <rect x="150" y="110" width="20" height="50" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="about-img-border"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat reveal-up">
+              <span class="stat-num" data-count="15">0</span>
+              <span class="stat-label">Years of Practice</span>
+            </div>
+            <div class="stat reveal-up delay-1">
+              <span class="stat-num" data-count="80">0</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat reveal-up delay-2">
+              <span class="stat-num" data-count="12">0</span>
+              <span class="stat-label">Design Awards</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title reveal-up">Architecture as<br /><em>Living Art</em></h2>
+          <p class="about-desc reveal-up delay-1">
+            Perparim Çalaj is the founder and lead architect of Modul Projekt,
+            a design studio rooted in the belief that architecture should feel inevitable —
+            as though no other form was possible.
+          </p>
+          <p class="about-desc reveal-up delay-2">
+            With a practice spanning residential, cultural, and commercial work,
+            Perparim brings a meticulous sensibility to every commission. Each project
+            begins with deep listening — to the site, the client, and the silent
+            requirements of light, material, and time.
+          </p>
+          <div class="about-credentials reveal-up delay-3">
+            <div class="credential">
+              <span class="credential-icon">◈</span>
+              <span>Master of Architecture — University of Prishtina</span>
+            </div>
+            <div class="credential">
+              <span class="credential-icon">◈</span>
+              <span>Licensed Architect — Kosovo Chamber of Architects</span>
+            </div>
+            <div class="credential">
+              <span class="credential-icon">◈</span>
+              <span>Founder, Modul Projekt Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-left">Selected Work</span>
+        <div class="section-line reveal-line"></div>
+      </div>
+      <h2 class="section-title reveal-up">Recent <em>Projects</em></h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card reveal-up" data-index="01">
+        <div class="project-visual">
+          <div class="project-placeholder p1">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="50" y="180" width="300" height="5" fill="white" opacity="0.2"/>
+              <rect x="100" y="80" width="200" height="100" stroke="white" stroke-width="1" fill="none" opacity="0.4"/>
+              <rect x="130" y="50" width="140" height="30" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+              <rect x="150" y="130" width="40" height="50" stroke="white" stroke-width="1" fill="none" opacity="0.5"/>
+              <rect x="210" y="130" width="40" height="50" stroke="white" stroke-width="1" fill="none" opacity="0.5"/>
+              <line x1="200" y1="50" x2="200" y2="20" stroke="white" stroke-width="0.5" opacity="0.3"/>
+              <rect x="80" y="100" width="30" height="80" stroke="white" stroke-width="0.8" fill="none" opacity="0.3"/>
+              <rect x="290" y="100" width="30" height="80" stroke="white" stroke-width="0.8" fill="none" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <span class="project-view">View Project</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-num">01</span>
+          <h3 class="project-title">Villa Dardania</h3>
+          <p class="project-type">Residential · Prishtina, Kosovo · 2024</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up delay-1" data-index="02">
+        <div class="project-visual">
+          <div class="project-placeholder p2">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="40" y="200" width="320" height="4" fill="white" opacity="0.2"/>
+              <rect x="80" y="60" width="240" height="140" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+              <rect x="80" y="60" width="80" height="140" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
+              <rect x="160" y="60" width="80" height="140" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
+              <rect x="240" y="60" width="80" height="140" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
+              <rect x="100" y="80" width="40" height="60" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
+              <rect x="180" y="80" width="40" height="60" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
+              <rect x="260" y="80" width="40" height="60" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <span class="project-view">View Project</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-num">02</span>
+          <h3 class="project-title">Cultural Centre Fushë</h3>
+          <p class="project-type">Cultural · Fushë Kosova · 2023</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up delay-2" data-index="03">
+        <div class="project-visual">
+          <div class="project-placeholder p3">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="30" y="210" width="340" height="4" fill="white" opacity="0.2"/>
+              <polygon points="200,40 320,210 80,210" stroke="white" stroke-width="1" fill="none" opacity="0.35"/>
+              <line x1="200" y1="40" x2="200" y2="210" stroke="white" stroke-width="0.5" opacity="0.25"/>
+              <line x1="200" y1="100" x2="290" y2="210" stroke="white" stroke-width="0.5" opacity="0.2"/>
+              <line x1="200" y1="100" x2="110" y2="210" stroke="white" stroke-width="0.5" opacity="0.2"/>
+              <rect x="175" y="160" width="50" height="50" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <span class="project-view">View Project</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-num">03</span>
+          <h3 class="project-title">Pavilion Brezovica</h3>
+          <p class="project-type">Commercial · Brezovica · 2023</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up delay-1" data-index="04">
+        <div class="project-visual">
+          <div class="project-placeholder p4">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="60" y="190" width="280" height="5" fill="white" opacity="0.2"/>
+              <rect x="120" y="70" width="160" height="120" stroke="white" stroke-width="1" fill="none" opacity="0.4"/>
+              <rect x="140" y="90" width="50" height="100" stroke="white" stroke-width="0.8" fill="none" opacity="0.35"/>
+              <rect x="210" y="90" width="50" height="100" stroke="white" stroke-width="0.8" fill="none" opacity="0.35"/>
+              <line x1="120" y1="70" x2="100" y2="50" stroke="white" stroke-width="0.5" opacity="0.3"/>
+              <line x1="280" y1="70" x2="300" y2="50" stroke="white" stroke-width="0.5" opacity="0.3"/>
+              <rect x="100" y="40" width="200" height="10" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <span class="project-view">View Project</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-num">04</span>
+          <h3 class="project-title">Office Tower Peja</h3>
+          <p class="project-type">Commercial · Peja, Kosovo · 2022</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up delay-2" data-index="05">
+        <div class="project-visual">
+          <div class="project-placeholder p5">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="40" y="200" width="320" height="4" fill="white" opacity="0.2"/>
+              <path d="M80 200 Q200 60 320 200" stroke="white" stroke-width="1" fill="none" opacity="0.4"/>
+              <path d="M100 200 Q200 90 300 200" stroke="white" stroke-width="0.5" fill="none" opacity="0.25"/>
+              <path d="M120 200 Q200 120 280 200" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
+              <line x1="200" y1="60" x2="200" y2="200" stroke="white" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <span class="project-view">View Project</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-num">05</span>
+          <h3 class="project-title">Amphitheatre Prizren</h3>
+          <p class="project-type">Cultural · Prizren, Kosovo · 2022</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up delay-3" data-index="06">
+        <div class="project-visual">
+          <div class="project-placeholder p6">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="50" y="195" width="300" height="5" fill="white" opacity="0.2"/>
+              <rect x="90" y="100" width="220" height="95" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+              <rect x="90" y="70" width="220" height="30" stroke="white" stroke-width="0.8" fill="none" opacity="0.3"/>
+              <rect x="90" y="50" width="220" height="20" stroke="white" stroke-width="0.5" fill="none" opacity="0.2"/>
+              <line x1="130" y1="100" x2="130" y2="195" stroke="white" stroke-width="0.5" opacity="0.2"/>
+              <line x1="200" y1="100" x2="200" y2="195" stroke="white" stroke-width="0.5" opacity="0.2"/>
+              <line x1="270" y1="100" x2="270" y2="195" stroke="white" stroke-width="0.5" opacity="0.2"/>
+              <rect x="170" y="140" width="60" height="55" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <span class="project-view">View Project</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-num">06</span>
+          <h3 class="project-title">Residential Complex Gjakova</h3>
+          <p class="project-type">Residential · Gjakova, Kosovo · 2021</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-bg">
+      <div class="philosophy-grid"></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-left light">Philosophy</span>
+        <div class="section-line reveal-line light"></div>
+      </div>
+      <div class="philosophy-content">
+        <blockquote class="philosophy-quote reveal-up">
+          "Architecture is the learned game, correct and magnificent,
+          of forms assembled in the light."
+          <cite>— Le Corbusier</cite>
+        </blockquote>
+        <div class="philosophy-pillars">
+          <div class="pillar reveal-up">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="1"/><path d="M30 10 L30 50 M10 30 L50 30" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
+            </div>
+            <h3 class="pillar-title">Context</h3>
+            <p class="pillar-desc">Every building is a response to its place — geography, culture, and the human stories that surround it.</p>
+          </div>
+          <div class="pillar reveal-up delay-1">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 60 60" fill="none"><rect x="10" y="10" width="40" height="40" stroke="currentColor" stroke-width="1"/><rect x="20" y="20" width="20" height="20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><rect x="25" y="25" width="10" height="10" fill="currentColor" opacity="0.3"/></svg>
+            </div>
+            <h3 class="pillar-title">Precision</h3>
+            <p class="pillar-desc">Details are not decoration — they are the language through which a building speaks its truth.</p>
+          </div>
+          <div class="pillar reveal-up delay-2">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 60 60" fill="none"><path d="M10 50 L30 10 L50 50 Z" stroke="currentColor" stroke-width="1" fill="none"/><line x1="30" y1="10" x2="30" y2="50" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
+            </div>
+            <h3 class="pillar-title">Endurance</h3>
+            <p class="pillar-desc">We design for decades, not trends — buildings that age with dignity and deepen with time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-left">Services</span>
+        <div class="section-line reveal-line"></div>
+      </div>
+      <h2 class="section-title reveal-up">What We <em>Offer</em></h2>
+      <div class="services-list">
+        <div class="service-item reveal-up">
+          <span class="service-num">01</span>
+          <div class="service-body">
+            <h3 class="service-title">Architectural Design</h3>
+            <p class="service-desc">Full-scope architectural services from concept through construction, covering residential, commercial, and cultural typologies.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-item reveal-up delay-1">
+          <span class="service-num">02</span>
+          <div class="service-body">
+            <h3 class="service-title">Interior Architecture</h3>
+            <p class="service-desc">Spatial planning and interior environments that extend the architectural language inward, creating coherent and considered spaces.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-item reveal-up delay-2">
+          <span class="service-num">03</span>
+          <div class="service-body">
+            <h3 class="service-title">Urban Planning</h3>
+            <p class="service-desc">Masterplanning and urban design for mixed-use developments, public spaces, and neighbourhood revitalisation.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-item reveal-up delay-3">
+          <span class="service-num">04</span>
+          <div class="service-body">
+            <h3 class="service-title">Consulting &amp; Feasibility</h3>
+            <p class="service-desc">Site assessments, feasibility studies, and expert consultation to help clients understand the full potential of their projects.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-left">Contact</span>
+        <div class="section-line reveal-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-title reveal-up">Start a <em>Conversation</em></h2>
+          <p class="contact-intro reveal-up delay-1">
+            Whether you have a project in mind or simply wish to discuss ideas,
+            Perparim welcomes every conversation. Great architecture begins with dialogue.
+          </p>
+          <div class="contact-details reveal-up delay-2">
+            <div class="contact-item">
+              <span class="contact-label">Studio</span>
+              <span class="contact-value">Rruga Nënë Tereza, Prishtina, Kosovo</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:info@modulprojekt.com" class="contact-value contact-link">info@modulprojekt.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+38344000000" class="contact-value contact-link">+383 44 000 000</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal-up delay-2" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" class="form-input" placeholder=" " required />
+            <label for="name" class="form-label">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" class="form-input" placeholder=" " required />
+            <label for="email" class="form-label">Email Address</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="project" name="project" class="form-input" placeholder=" " />
+            <label for="project" class="form-label">Project Type</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " rows="4" required></textarea>
+            <label for="message" class="form-label">Message</label>
+          </div>
+          <button type="submit" class="form-submit">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-mark">M</span><span>odul Projekt</span>
+          </div>
+          <p class="footer-tagline">Architecture with intention.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Modul Projekt. Perparim Çalaj.</span>
+        <span>All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

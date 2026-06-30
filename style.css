@@ -23,9 +23,9 @@ body {
   font-family: var(--font-sans);
   font-weight: 300;
   overflow-x: hidden;
-  cursor: none;
   animation: page-in 0.5s var(--ease) both;
 }
+html.has-mouse body { cursor: none; }
 @keyframes page-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 body.page-exit { opacity: 0; transform: translateY(-8px); transition: opacity 0.3s, transform 0.3s; }
 
@@ -34,14 +34,15 @@ img, svg { display: block; }
 
 .container { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
 
-/* ─── Loader ────────────────────────────────────────────────────── */
+/* ─── Loader (desktop only) ─────────────────────────────────────── */
 .loader {
   position: fixed; inset: 0; z-index: 9999;
   background: var(--black);
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+  display: none; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
   transition: opacity 0.7s var(--ease), visibility 0.7s;
 }
-.loader.hidden { opacity: 0; visibility: hidden; }
+html.has-mouse .loader { display: flex; }
+.loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 .loader-bar { width: 180px; height: 1px; background: rgba(255,255,255,0.1); position: relative; overflow: hidden; }
 .loader-bar::after {
   content: ''; position: absolute; left: -100%; top: 0; width: 100%; height: 100%;
@@ -54,14 +55,16 @@ img, svg { display: block; }
 .cursor {
   position: fixed; width: 8px; height: 8px; background: var(--gold); border-radius: 50%;
   pointer-events: none; z-index: 9998; transform: translate(-50%,-50%);
-  transition: width 0.25s, height 0.25s;
+  transition: width 0.25s, height 0.25s; display: none;
 }
 .cursor-ring {
   position: fixed; width: 36px; height: 36px;
   border: 1px solid rgba(201,169,110,0.4); border-radius: 50%;
   pointer-events: none; z-index: 9997; transform: translate(-50%,-50%);
-  transition: width 0.4s var(--ease), height 0.4s var(--ease), border-color 0.3s;
+  transition: width 0.4s var(--ease), height 0.4s var(--ease), border-color 0.3s; display: none;
 }
+html.has-mouse .cursor,
+html.has-mouse .cursor-ring { display: block; }
 .cursor.hover { width: 14px; height: 14px; }
 .cursor-ring.hover { width: 54px; height: 54px; border-color: var(--gold); }
 
@@ -143,8 +146,9 @@ img, svg { display: block; }
 .section-title.on-dark { color: var(--off-white); }
 
 /* ─── Reveal ─────────────────────────────────────────────────────── */
-.rv { opacity: 0; transform: translateY(28px); transition: opacity 0.75s var(--ease), transform 0.75s var(--ease); }
-.rv.from-left { transform: translateX(-24px); }
+.rv { transition: opacity 0.75s var(--ease), transform 0.75s var(--ease); }
+html.has-mouse .rv { opacity: 0; transform: translateY(28px); }
+html.has-mouse .rv.from-left { transform: translateX(-24px); }
 .rv.visible { opacity: 1; transform: none; }
 .d1{transition-delay:0.1s!important}.d2{transition-delay:0.2s!important}
 .d3{transition-delay:0.3s!important}.d4{transition-delay:0.4s!important}
@@ -488,12 +492,3 @@ img, svg { display: block; }
   .projects-grid { grid-template-columns: 1fr; }
 }
 
-/* ─── Touch / mobile ─────────────────────────────────────────────── */
-@media (hover: none), (pointer: coarse) {
-  /* Kill custom cursor */
-  body { cursor: auto !important; }
-  .cursor, .cursor-ring { display: none !important; }
-  /* Never leave content invisible — reveal all on touch devices */
-  .rv { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .loader { display: none !important; }
-}

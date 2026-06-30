@@ -95,6 +95,11 @@ const revealObs = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.rv:not(.home-hero .rv):not(.page-hero .rv)').forEach(el => revealObs.observe(el));
 
+// Pages without a loader need their hero elements revealed on load
+if (!document.getElementById('loader')) {
+  window.addEventListener('DOMContentLoaded', () => setTimeout(revealHeroElements, 100));
+}
+
 /* ─── Section Rule Draw ───────────────────────────────────────────── */
 const ruleObs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('drawn'); });
